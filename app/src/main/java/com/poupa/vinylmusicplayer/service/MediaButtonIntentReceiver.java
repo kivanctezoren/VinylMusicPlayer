@@ -111,13 +111,13 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                     command = MusicService.ACTION_STOP;
                     break;
                 case KeyEvent.KEYCODE_HEADSETHOOK:
-                case KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE:
+                case KeyEvent.KEYCODE_MEDIA_PREVIOUS:
                     command = MusicService.ACTION_TOGGLE_PAUSE;
                     break;
                 case KeyEvent.KEYCODE_MEDIA_NEXT:
                     command = MusicService.ACTION_SKIP;
                     break;
-                case KeyEvent.KEYCODE_MEDIA_PREVIOUS:
+                case KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE:
                     command = MusicService.ACTION_REWIND;
                     break;
                 case KeyEvent.KEYCODE_MEDIA_PAUSE:
@@ -137,7 +137,7 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
 
                         // The service may or may not be running, but we need to send it
                         // a command.
-                        if (keycode == KeyEvent.KEYCODE_HEADSETHOOK || keycode == KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE) {
+                        if (keycode == KeyEvent.KEYCODE_HEADSETHOOK || keycode == KeyEvent.KEYCODE_MEDIA_PREVIOUS) {
                             if (eventTime - mLastClickTime >= DOUBLE_CLICK) {
                                 mClickCounter = 0;
                             }
