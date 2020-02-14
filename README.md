@@ -1,7 +1,7 @@
 # Vinyl Music Player: Previous - Pause Button Swap
 
 **This is a fork of Vinyl that only swaps the functionalities of the media pause button and the media previous button.**
-**Made as a workaround to the problem my phone recognizing an older headset's only button as previous instead of play/pause.
+**Made as a workaround to the problem my phone recognizing an older headset's only button as previous instead of play/pause.**
 
 ---
 
